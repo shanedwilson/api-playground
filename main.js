@@ -23,7 +23,7 @@ const displayArtPics = () => {
                 <div class="card-body"> 
                 </div>
                 <div class="caption card-footer mt-auto">
-                    <p class="card-text">${artPiece.location}.</p>
+                    <p class="card-text text-center">${artPiece.location}.</p>
                 </div> 
             </div>
             `
