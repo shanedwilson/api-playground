@@ -1,10 +1,3 @@
-// $.ajax(' https://data.nashville.gov/resource/xakp-ess3.json')
-// .done((response) => {
-//     displayArtPics(response);
-// }).fail((err) => {
-//     console.error(err);
-// })
-
 const loadArt = () => {
     return new Promise((resolve, reject) => {
         $.ajax('https://data.nashville.gov/resource/xakp-ess3.json')
