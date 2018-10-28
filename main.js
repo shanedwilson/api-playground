@@ -10,17 +10,6 @@ const loadArt = () => {
     });
 }
 
-const intializeBoardView = () => {
-    boardsData.loadBoards().then((boards) => {
-        return pinsData.loadPinsOnBoards(boards);
-    }).then((boardsWithPins) => {
-        writeBoards(boardsWithPins);
-        bindEvents();
-    }).catch((error) => {
-        console.error(error);
-    })
-};
-
 const displayArtPics = () => {
     loadArt().then ((artPieces) => {
         let domString = "";
